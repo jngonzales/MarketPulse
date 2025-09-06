@@ -1,0 +1,43 @@
+{
+  "name": "marketpulse-pro",
+  "version": "1.0.0",
+  "description": "Professional Discord bot for crypto and stock market analytics",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "nodemon --exec ts-node src/index.ts",
+    "deploy": "ts-node src/deploy-commands.ts",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["discord", "bot", "crypto", "stocks", "trading", "market", "analytics"],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "@prisma/client": "^6.15.0",
+    "@types/node": "^24.3.1",
+    "@types/uuid": "^10.0.0",
+    "@types/ws": "^8.18.1",
+    "axios": "^1.11.0",
+    "canvas": "^3.2.0",
+    "chart.js": "^4.5.0",
+    "chartjs-node-canvas": "^5.0.0",
+    "discord.js": "^14.22.1",
+    "dotenv": "^17.2.2",
+    "node-cron": "^4.2.1",
+    "prisma": "^6.15.0",
+    "technicalindicators": "^3.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2",
+    "uuid": "^11.1.0",
+    "ws": "^8.18.3",
+    "zod": "^3.23.8",
+    "p-limit": "^6.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
